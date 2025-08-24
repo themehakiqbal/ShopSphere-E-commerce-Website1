@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ShopSphere</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+        <img src="images/logo.png" alt="ShopSphere Logo">
+        <span>ShopSphere</span>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="product.html">Product Details</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="shop" class="shop-toolbar">
+    <h1>Products</h1>
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search products…" aria-label="Search products"/>
+      
+        <select id="category-filter" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Clothing">Clothing</option>
+        </select>
+      
+        <select id="sort" aria-label="Sort products">
+            <option value="default">Sort: Featured</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+        </select>
+    </div>
+    </section>
+
+    <section class="products">
+    <div id="products" class="product-grid">
+        <div class="product-card" data-category="Electronics" data-price="10500">
+            <a href="product.html?id=wireless-headphones">
+            <img src="images/wireless-headphones.png" alt="Wireless Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>Rs. 10,500.00</p>
+            <button class="checkout-btn" >View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Electronics" data-price="10500">
+            <a href="product.html?id=dyson-airwrap">
+            <img src="images/dyson-airwrap.png" alt="Dyson Straightener">
+            <h3>Dyson Airwrap</h3>
+            <p>Rs. 237,000.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Clothing" data-price="2000">
+            <a href="product.html?id=mens-cotton-shirt">
+            <img src="images/men's-cotton-shirt.png" alt="T-Shirt">
+            <h3>Men's Cotton T-Shirt</h3>
+            <p>Rs. 2,000.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Clothing" data-price="23275">
+            <a href="product.html?id=nike-sneakers">
+            <img src="images/nike-sneakers.png" alt="Nike Sneakers for Girls">
+            <h3>Nike Sneakers</h3>
+            <p>Rs. 23,275.00 </p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Accessories" data-price="5300">
+            <a href="product.html?id=leather-laptop-bag">
+            <img src="images/leather-laptop-bag2.png" alt="Leather Laptop Bag">
+            <h3>Leather Laptop Bag</h3>
+            <p>Rs. 5,300.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Clothing" data-price="2699">
+            <a href="product.html?id=cloth-hanging-stand">
+            <img src="images/cloth-hanging-stand.png" alt="Clothes Hanging Stand">
+            <h3>Cloth Hanging Stand</h3>
+            <p>Rs. 2,699.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Electronis" data-price="250000">
+            <a href="product.html?id=hp-envy">
+            <img src="images/hp.png" alt="HP laptop">
+            <h3>HP Envy x360</h3>
+            <p>Rs. 250,000.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Electronics" data-price="12000">
+            <a href="product.html?id=electric-chopper">
+            <img src="images/electric-chopper1.png" alt="Electric Chopper">
+            <h3>Electric Chopper</h3>
+            <p>Rs. 12,000.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card"data-category="Accessories" data-price="1500">            
+            <a href="product.html?id=water-bottle">
+            <img src="images/water-bottle.png" alt="Water Bottle">
+            <h3>Water Bottle for Kids</h3>
+            <p>Rs. 1,500.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Accessories" data-price="7000">
+            <a href="product.html?id=apple-watch">
+            <img src="images/apple-touch-watch.png" alt="Apple Watch">
+            <h3>Apple Watch</h3>
+            <p>Rs. 7,000.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Accessories" data-price="1000">
+            <a href="product.html?id=ultralight-eyeglasses">
+            <img src="images/enacolor-ultralight-eyeglasses.png" alt="Eyeglasses">
+            <h3>Ultralight Eyeglasses</h3>
+            <p>Rs. 1,000.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+        <div class="product-card" data-category="Accessories" data-price="5500">
+            <a href="product.html?id=luxury-handbags">
+            <img src="images/handbag.png" alt="Handbags">
+            <h3>Luxury Handbags</h3>
+            <p>Rs. 5,500.00</p>
+            <button class="checkout-btn">View Details</button>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="product.html">Product Details</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-socials">
+            <h3>Follow Us</h3>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-section footer-about">
+            <h3>About Us</h3>
+            <p>ShopSphere is a modern e-commerce platform dedicated to bringing the best shopping experience to your fingertips. We offer a wide range of high-quality products, from electronics and fashion to home essentials, all carefully curated to meet your needs. Our mission is to make online shopping simple, convenient, and enjoyable, with fast delivery, secure payments, and excellent customer service. .</p>
+        </div>
+    </div>
+        <div class="footer-bottom">
+            <p>© 2025 ShopSphere. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
